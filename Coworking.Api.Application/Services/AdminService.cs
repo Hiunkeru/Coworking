@@ -18,17 +18,17 @@ namespace Coworking.Api.Application.Services
 
         private readonly IAdminRepository _adminRepository;
         private readonly IAppConfig _appConfig;
-        private IMemoryCache _memoryCache;
+        //private IMemoryCache _memoryCache;
 
-        public AdminService(IAdminRepository adminRepository, IAppConfig appConfig, IMemoryCache memoryCache)
+        public AdminService(IAdminRepository adminRepository, IAppConfig appConfig) //, IMemoryCache memoryCache)
         {
             _adminRepository = adminRepository;
             _appConfig = appConfig;
-            _memoryCache = memoryCache;
+            //_memoryCache = memoryCache;
 
-            MemoryCacheEntryOptions cacheConfig = new MemoryCacheEntryOptions();
-            cacheConfig.Priority = CacheItemPriority.Normal;
-            cacheConfig.AbsoluteExpiration = DateTime.Now.AddMinutes(appConfig.CacheExpireInMinutes);
+            //MemoryCacheEntryOptions cacheConfig = new MemoryCacheEntryOptions();
+            //cacheConfig.Priority = CacheItemPriority.Normal;
+            //cacheConfig.AbsoluteExpiration = DateTime.Now.AddMinutes(appConfig.CacheExpireInMinutes);
 
         }
 

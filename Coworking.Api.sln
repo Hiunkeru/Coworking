@@ -31,7 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coworking.Api.CrossCutting"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Clients", "2 - Clients", "{E5BCCCCD-DEEC-4E42-AD81-C62C15D95572}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientExample", "ClientExample\ClientExample.csproj", "{9EBADE1F-D2E4-40F5-8F42-F34FA817D222}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientExample", "ClientExample\ClientExample.csproj", "{9EBADE1F-D2E4-40F5-8F42-F34FA817D222}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coworking.Api.Application.Unit.Tests", "Coworking.Api.Application.Tests\Coworking.Api.Application.Unit.Tests.csproj", "{DDC69196-F2CE-4612-A5D6-E1AD7624B79B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,10 @@ Global
 		{9EBADE1F-D2E4-40F5-8F42-F34FA817D222}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EBADE1F-D2E4-40F5-8F42-F34FA817D222}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EBADE1F-D2E4-40F5-8F42-F34FA817D222}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDC69196-F2CE-4612-A5D6-E1AD7624B79B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDC69196-F2CE-4612-A5D6-E1AD7624B79B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDC69196-F2CE-4612-A5D6-E1AD7624B79B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDC69196-F2CE-4612-A5D6-E1AD7624B79B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -89,6 +95,7 @@ Global
 		{C24D96AA-2AF9-41E7-ACF5-D3901DE09358} = {5594D73C-D80F-47F9-B418-A96C27ADAAD5}
 		{4EC9116B-2BEF-486D-A26F-60AE8A757D12} = {C24D96AA-2AF9-41E7-ACF5-D3901DE09358}
 		{9EBADE1F-D2E4-40F5-8F42-F34FA817D222} = {E5BCCCCD-DEEC-4E42-AD81-C62C15D95572}
+		{DDC69196-F2CE-4612-A5D6-E1AD7624B79B} = {97162887-E299-45B5-AB89-258D0EB51879}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D2353226-9871-4AD0-A8E3-B477AF738404}

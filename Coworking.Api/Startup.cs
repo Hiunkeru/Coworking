@@ -31,12 +31,12 @@ namespace Coworking.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
             services.AddTransient<ICoworkingDBContext, CoworkingDBContext>();
+            IoCRegister.AddRegistration(services);
+
             services.AddDbContext<CoworkingDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DataBaseConnection")));
             services.AddApplicationInsightsTelemetry(Configuration);
-
-            IoCRegister.AddRegistration(services);
+          
             SwaggerConfig.AddRegistration(services);
 
             services.AddAuthentication("Bearer")

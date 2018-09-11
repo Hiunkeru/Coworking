@@ -18,17 +18,11 @@ namespace Coworking.Api.Application.Services
 
         private readonly IAdminRepository _adminRepository;
         private readonly IAppConfig _appConfig;
-        //private IMemoryCache _memoryCache;
 
-        public AdminService(IAdminRepository adminRepository, IAppConfig appConfig) //, IMemoryCache memoryCache)
+        public AdminService(IAdminRepository adminRepository, IAppConfig appConfig)
         {
             _adminRepository = adminRepository;
             _appConfig = appConfig;
-            //_memoryCache = memoryCache;
-
-            //MemoryCacheEntryOptions cacheConfig = new MemoryCacheEntryOptions();
-            //cacheConfig.Priority = CacheItemPriority.Normal;
-            //cacheConfig.AbsoluteExpiration = DateTime.Now.AddMinutes(appConfig.CacheExpireInMinutes);
 
         }
 
@@ -54,15 +48,9 @@ namespace Coworking.Api.Application.Services
         public async Task<IEnumerable<Admin>> GetAllAdmins()
         {
 
-            //return await _memoryCache.GetOrCreateAsync("admins", async cacheEntry =>
-            //{
-
                 var admins = await _adminRepository.GetAll();
 
                 return admins.Select(AdminMapper.Map);
-
-            //});
-
             
         }
 

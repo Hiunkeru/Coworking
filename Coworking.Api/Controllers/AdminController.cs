@@ -13,7 +13,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace Coworking.Api.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [Produces("application/json")]
     [Route("[controller]")]
     public class AdminController : Controller

@@ -12,8 +12,7 @@ namespace Coworking.Api.DataAccess.Repositories
 {
     public class AdminRepository : IAdminRepository
     {
-        //CRUD --> CREATE READ UPDATE DELETE
-
+        
         private readonly ICoworkingDBContext _coworkingDBContext;
 
         public AdminRepository(ICoworkingDBContext coworkingDBContext)

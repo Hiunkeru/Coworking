@@ -25,7 +25,7 @@ namespace Coworking.Api.Application.Unit.Tests
                 Mock<IAdminRepository> _adminrepository = new AdminRepositoryMock()._adminRepository;
                 Mock<IAppConfig> _appConfig = new AppConfigMock()._appConfig;
 
-                _adminService = new AdminService(_adminrepository.Object, _appConfig.Object);
+                //_adminService = new AdminService(_adminrepository.Object, _appConfig.Object);
 
             }
 
